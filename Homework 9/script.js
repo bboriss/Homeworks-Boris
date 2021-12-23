@@ -1,4 +1,4 @@
-var born = prompt( "Enter how old are you:");
+var born = prompt( "Please enter what year you were born in:");
 
 if (born !== null) {
     var year = parseInt (born) ;
