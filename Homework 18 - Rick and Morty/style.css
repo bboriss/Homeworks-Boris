@@ -1,0 +1,114 @@
+@font-face {
+  font-family: Rick and Morty;
+  src: url(./get_schwifty.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url(./16992087.png);
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#logo_container {
+  margin-top: 50px;
+}
+#gradient-text {
+  letter-spacing: 9px;
+  font-family: Rick and Morty;
+  font-size: 79px;
+  background: -webkit-linear-gradient(#69c8ecff, #e3fc3f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#button {
+  letter-spacing: 5px;
+  color: #35c4c4;
+  font-size: 30px;
+  font-family: Rick and Morty;
+  margin-top: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+#button:hover {
+  filter: brightness(150%);
+  transform: scale(1.1);
+}
+#button:active {
+  filter: brightness(100%);
+  transform: scale(0.9);
+}
+#table_btn_container {
+  visibility: hidden;
+  margin-right: auto;
+  height: 50vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+#prevBtn {
+  color: #d4d153;
+  margin-left: 80px;
+  margin-right: 50px;
+  margin-top: 190px;
+  cursor: pointer;
+  font-size: 3.5rem;
+}
+#nextBtn {
+  color: #d4d153;
+  margin-left: 50px;
+  margin-top: 190px;
+  cursor: pointer;
+  font-size: 3.5rem;
+}
+#prevBtn:hover {
+  filter: brightness(110%);
+  transform: scale(1.1);
+}
+#nextBtn:hover {
+  filter: brightness(110%);
+  transform: scale(1.1);
+}
+#prevBtn:active {
+  filter: brightness(100%);
+  transform: scale(0.9);
+}
+#nextBtn:active {
+  filter: brightness(100%);
+  transform: scale(0.9);
+}
+#table {
+  border-collapse: collapse;
+  max-height: 378px;
+  max-width: 900px;
+  overflow-y: scroll;
+  display: block;
+  margin-top: 200px;
+}
+#table td,
+#table th {
+  border: 3px solid #35c4c4;
+  padding: 8px;
+}
+#table thead {
+  font-weight: bold;
+  font-size: 25px;
+  background-color: #deff87;
+  padding: 12px;
+}
+#table td {
+  font-weight: normal;
+  font-size: 18px;
+
+  padding: 6px;
+}
+tbody td {
+  background-color: #ffffcc;
+}
